@@ -1,0 +1,35 @@
+.manager-s-container {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-content: stretch;
+	align-items: stretch;
+
+	padding: 20px 10px 10px 20px;
+}
+
+.manager-s-container > .left, 
+.manager-s-container > .right {
+	padding: 0 10px 10px 0;
+}
+
+.manager-s-container > .left img, 
+.manager-s-container > .right img {
+	min-width: 440px;
+	width: 100%;	
+}
+
+@media all and (min-width: 800px) {
+	.manager-s-container {
+		flex-direction: row;
+		width: 100%;
+	}
+
+	/*(800px - 20px + 20px + 10px) / 2*/
+	.manager-s-container > .left img, 
+	.manager-s-container > .right img {
+		min-width: 375px;
+	}
+}

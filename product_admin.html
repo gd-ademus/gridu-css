@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./components/css/base.css">
+    <link rel="stylesheet" href="./components/css/product.css">
+    <link rel="stylesheet" href="./components/css/modal.css">
+    <link rel="stylesheet" href="./components/css/filter.css">
+
+    <link rel="stylesheet" href="./components/css/product_admin.css">
+    <title>Product Admin</title>
+</head>
+<body>
+<main id="background" class="background">
+    <header></header>
+    <div class="wrapper-background">
+        <img class="logo" src="./components/images/logo.svg" alt="">
+        <span class="hello-user">Hello, <i>John_Doe</i></span>
+        <img class="header-logout" src="./components/images/header-logout.svg" alt="logout">
+        <nav>
+            <a class="back-link" href="#">Back</a>
+            <span class="category-nav"><span>Category:</span> Man / Active wear</span>
+        </nav>
+        <span class="copyright-demo-shop">Copyright "<a href="#">Demo Shop</a>", 2017</span>
+        <!---Main section-->
+        <div class="main-block">
+            <div class="product-s-container">
+                <div class="left">
+                    <div>
+                        <img class="product-img" src="./components/images/product.jpg" alt="Some img ...">
+                        <div class="star-box">
+                            <div>
+                                <img src="./components/images/star-active.svg" alt="star">
+                                <img src="./components/images/star-active.svg" alt="star">
+                                <img src="./components/images/star-active.svg" alt="star">
+                                <img src="./components/images/star-active.svg" alt="star">
+                                <img src="./components/images/star-inactive.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <span class="header">Active Coat Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.3</span>
+                    <span class="text">
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam, libero aliquid architecto ad quis maiores sit nulla officiis ex velit sapiente autem fugit quam, qui reprehenderit veniam fugiat nemo exercitationem cum minus ipsa consequuntur. Pariatur totam suscipit, voluptatibus laudantium.</span>
+							<span class="admin-text">You can <a href="#">add 5 more</a>. You can also <a href="#"
+                                                                                                         onclick="showEditProduct(); return true;">edit</a> details or <a
+                                    href="#" onclick="showDeleteProduct(); return true;">delete</a> them.</span>
+						</span>
+                    <div class="buy">
+                        <label>
+                            <span>$</span>47.95
+                            <span>(9 items left)</span>
+                        </label>
+                        <input type="submit" value="Buy" onclick="showAddProduct(); return true;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</main>
+
+<div id="modalWindows" class="modal-windows">
+    <div id="deleteProductModal" class="modal-window modal-product-window">
+        <div class="modal-window-header">Are you sure?
+        </div>
+        <!-- <div class="modal-product-delete-body"> -->
+        <div class="modal-product-simple-text">
+				<span class="line">You are trying to delete </span>
+                <span class="line">this product. </span> 
+				<span class="line">Are you sure you want this?</span>
+        </div>
+        <div class="modal-delete-product-buttons">
+            <input class="modal-product-cancel modal-product-button" type="submit" value="Cancel"
+                   onclick="closeModal(); return true;"
+            ><input class="modal-product-submit modal-product-button" type="submit" value="Submit">
+        </div>
+        <!-- </div> -->
+    </div>
+
+    <div id="addProductModal" class="modal-window modal-product-window">
+        <div class="modal-window-header">Thank you!</div>
+        <div class="modal-product-simple-text">
+            <span class="line">You successfully purchased <span/>
+            <span class="line">this item.</span>
+        </div>
+        <div class="modal-add-product-buttons">
+            <input class="modal-product-continue modal-product-button" type="submit" value="Continue shopping"
+                   onclick="closeModal(); return true;">
+        </div>
+    </div>
+
+    <div id="editProductModal" class="modal-window modal-product-window">
+        <div class="modal-window-header">Edit “Active Coat Lorem Ipsum Dolor Sit Amet Consectetur blabla</div>
+        <div class="container-modal-product-edit-body modal-product-edit-body">
+            <div class="product-edit-name item-edit-name">
+                <label class="product-edit-title">Name:</label>
+                <input type="text" placeholder="Please enter name..."/>
+            </div>
+            <div class="product-edit-category item-edit-category">
+                <div class="product-edit-title">Category:</div>
+                <select class="drop-list white">
+                    <option>Active wear</option>
+                    <option>Dresses</option>
+                    <option>Jeans</option>
+                    <option>Boats</option>
+                </select>
+            </div>
+            <div class="product-edit-gender item-edit-gender">
+                <div class="product-edit-title">Gender:</div>
+                <div class="radio-check-box">
+                    <input type="radio" id="check-box-1" name="gender-group" checked>
+                    <div class="radio">
+                        <div class="label-border">
+                            <label for="check-box-1"></label>
+                        </div>
+                        <span class="text">Man</span>
+                    </div>
+                    <input type="radio" id="check-box-2" name="gender-group">
+                    <div class="radio">
+                        <div class="label-border">
+                            <label for="check-box-2"></label>
+                        </div>
+                        <span class="text">Woman</span>
+                    </div>
+                    <input type="radio" id="check-box-3" name="gender-group">
+                    <div class="radio">
+                        <div class="label-border">
+                            <label for="check-box-3"></label>
+                        </div>
+                        <span class="text">Unisex</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-edit-description item-edit-description">
+                <label class="product-edit-title">Description:</label>
+                <textarea></textarea>
+            </div>
+            <div class="product-edit-link-image item-edit-link-image">
+                <label class="product-edit-title">Link to image:</label>
+                <input type="text" pattern="http://[A-Za-z_0-9_\.]{3,}" placeholder="Please enter link to img...">
+            </div>
+            <div class="product-edit-image item-edit-image">
+                <img src="./components/images/product.jpg" alt="Some img ...">
+            </div>
+            <div class="product-edit-price item-edit-price">
+                <label class="product-edit-title">Price:</label>
+                <input type="number" step="1" min="1" placeholder="Please enter price...">
+            </div>
+            <div class="product-edit-rating item-edit-rating">
+                <div class="product-edit-title">Rating:</div>
+                <select class="drop-list white">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-edit-product-buttons">
+            <input class="modal-product-cancel modal-product-button" type="submit" value="Cancel"
+                   onclick="closeModal(); return true;"
+            ><input class="modal-product-submit modal-product-button" type="submit" value="Submit">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function blurBackground() {
+        document.getElementById("background").classList.add("modal-background");
+        document.getElementById("modalWindows").style.zIndex = 1000;
+    }
+
+    function showDeleteProduct() {
+        blurBackground();
+        document.getElementById("deleteProductModal").style.display = "table";
+    }
+
+    function showAddProduct() {
+        blurBackground();
+        document.getElementById("addProductModal").style.display = "table";
+    }
+
+    function showEditProduct() {
+        blurBackground();
+        document.getElementById("editProductModal").style.display = "table";
+        document.getElementById("background").classList.add("wrapper-background-1200");
+        document.getElementById("modalWindows").classList.add("wrapper-background-1200");
+    }
+
+    function closeModal() {
+        document.getElementById("background").classList.remove("modal-background");
+        document.getElementById("modalWindows").style.zIndex = -1000;
+
+        document.getElementById("deleteProductModal").style.display = "none";
+        document.getElementById("addProductModal").style.display = "none";
+        document.getElementById("editProductModal").style.display = "none";
+
+        document.getElementById("background").classList.remove("wrapper-background-1200");
+        document.getElementById("modalWindows").classList.remove("wrapper-background-1200");
+    }
+</script>
+</body>
+</html>
