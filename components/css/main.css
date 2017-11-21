@@ -145,13 +145,13 @@
 
 	/*line-height: 30px;*/
 	height: 30px;
-	padding: 0 0 0 17.5px;
+	padding: 5.5px 0 8px 17.5px;
 }
 
 .product-photo .star-box img {
 	height: 16.5px;	
 	width: 17px;
-	margin: 5.5px 3px 8px 3px;
+    margin-right: 3.69px;
 	/*vertical-align: middle;*/
 }
 /* product photo block -end- */
