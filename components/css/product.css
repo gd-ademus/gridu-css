@@ -38,7 +38,7 @@
 	margin: 55px 30px;
 	padding: 0 0 20px 20px;
 
-	background: #EDECEB;
+	background: url("../images/modal-bg.png"), #EDECEB;
 }
 
 /* left block -start-*/
@@ -148,10 +148,8 @@
 	border-width: inherit;
 
 	color: #FFFFFF;	
-	font-family: "PT Sans Caption";	
-	font-size: 18px;	
-	font-weight: bold;	
-	line-height: 23px;	
+	font-size: 14px;	
+	line-height: 19px;	
 	text-align: center;
 }
 

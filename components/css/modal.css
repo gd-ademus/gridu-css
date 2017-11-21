@@ -22,7 +22,7 @@
 	transform: translate(-50%, -50%);
 
 	border-radius: 15px;
-	background: rgba(0,0,0,0.2) url("../images/modal-background.jpg");	
+	background: url("../images/modal-bg.png"), rgba(0,0,0,0.2);	
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 
 	-moz-transition: all .1s linear;
