@@ -7,17 +7,6 @@
 	color: #398C7E;
 }
 
-.modal-windows {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	min-height: 100vh;
-
-	z-index: -1000;
-}
-
 .modal-product-window {
 	display: none;
 	
