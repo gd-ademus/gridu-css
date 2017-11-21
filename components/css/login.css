@@ -76,7 +76,8 @@
 }
 
 .login-input:focus, .password-input:focus {
-	border: 3px solid #BFD6D2;	
+	border: 3px solid #BFD6D2;
+	background-position: right 16px center;
 }
 
 .login-input:focus {

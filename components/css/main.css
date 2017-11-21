@@ -117,8 +117,7 @@
 .product-wrapper {
 	background: url("../images/modal-bg.png"), #EDECEB;
 	display: flex;
-    flex-direction: column;
-    max-width: 360px;
+	flex-direction: column;
 }
 
 /* product photo block -start- */
@@ -151,7 +150,7 @@
 .product-photo .star-box img {
 	height: 16.5px;	
 	width: 17px;
-    margin-right: 3.69px;
+	margin-right: 3.69px;
 	/*vertical-align: middle;*/
 }
 /* product photo block -end- */
@@ -339,5 +338,11 @@
 	.products {
 		grid-template-columns: [line1] 1fr [line2] 1fr [line3];
 		margin: 25px;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	.product-wrapper {
+		max-width: 360px;
 	}
 }

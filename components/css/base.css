@@ -110,3 +110,27 @@ footer {
 .copyright-demo-shop > a {
 	color: #FFFFFF;
 }
+
+::-webkit-input-placeholder {
+	color: #999999;	
+  	font-size: 14px;	
+  	font-style: italic;	
+}
+
+::-moz-placeholder {
+	color: #999999;	
+  	font-size: 14px;	
+  	font-style: italic;	
+}
+
+:-ms-input-placeholder {
+	color: #999999;	
+  	font-size: 14px;	
+  	font-style: italic;	
+}
+
+:-moz-placeholder {
+  	color: #999999;	
+  	font-size: 14px;	
+  	font-style: italic;	
+}
