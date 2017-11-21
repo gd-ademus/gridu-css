@@ -13,11 +13,10 @@
 	right: 245px;	
 }
 
-.filter-button input {
+.filter-button > input {
 	height: 35px;	
 	width: 140px;	
-	border-radius: 5px;	
-	background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+	border-radius: 5px;
 
 	color: #FFFFFF;	
 	font-size: 14px;	
@@ -26,25 +25,28 @@
 
 	outline: none;
 	border-width: inherit;
+
+	background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+	box-shadow: none;
 }
 
-.filter-button input:active {
+.filter-button.pressed > input {
 	background: linear-gradient(0deg, #2BBCC2 0%, #1B745F 100%);	
 	box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
 }
 
-.filter-button.arrow-up::after {
+.filter-button.pressed::after {
 	content: "";
 	position: absolute;
-	bottom: -33px;	
+	bottom: -18px;
 	left: 52px;
 
 	width: 0; 
 	height: 0; 
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
+	border-left: 16.5px solid transparent;
+	border-right: 16.5px solid transparent;
 
-	border-bottom: 33px solid white;
+	border-bottom: 18px solid white;
 
 	z-index: 100;	
 }

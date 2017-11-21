@@ -244,30 +244,30 @@
                             <hr/>
                             <span class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
 
-                            <label class="price">
-                                <span>$</span>47.95
-                            </label>
-                            <input class="button" type="submit" value="Show more">
-                        </div>
-                    </li>
-                </ul>
-            </div>
+                        <label class="price">
+                            <span>$</span>47.95
+                        </label>
+                        <input class="button" type="submit" value="Show more">
+                    </div>
+                </li>
+            </ul>
         </div>
-        <footer></footer>
-    </main>
-    <script type="text/javascript">
-    function showFilterBody() {
-        var button = document.getElementById("filterButton");
-        var filterBalloon = document.getElementById("filterBalloon");
-        
-        if (filterBalloon.style.display === "none") {
-            filterBalloon.style.display = "flex";
-             button.classList.add("arrow-up");
-        } else {
-            filterBalloon.style.display = "none";
-            button.classList.remove("arrow-up");
-        }
+    </div>
+    <footer></footer>
+</main>
+<script type="text/javascript">
+function showFilterBody() {
+    var button = document.getElementById("filterButton");
+    var filterBalloon = document.getElementById("filterBalloon");
+
+    if (filterBalloon.style.display === "none") {
+        filterBalloon.style.display = "flex";
+        button.classList.add("pressed");
+    } else {
+        filterBalloon.style.display = "none";
+        button.classList.remove("pressed");
     }
-    </script>
+}
+</script>
 </body>
 </html>
