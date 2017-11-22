@@ -8,64 +8,70 @@
 	display: inline-block;
 }
 
-.radio-switch-box .border {
-	position: absolute;
+.radio-switch-box #switch-slider-off:checked + div {	
 	height: 26px;
 	width: 42px;
 	border: 1px solid #288575;	
-	border-radius: 25px;
-
-	top: 0;
-	left: 0;
-	z-index: 0;
-}
-
-.radio-switch-box #switch-slider-off:checked + div {	
+	border-radius: 25px;	
 	background-color: #FFFFFF;
-	z-index: 1;
 }
 
 .radio-switch-box #switch-slider-on:checked + div {
+	height: 26px;
+	width: 42px;
+	border: 1px solid #288575;	
+	border-radius: 25px;	
 	background-color: #288575;
-	z-index: 1;
 }
 
-.radio-switch-box label {
+.radio-switch-box .radio-button {
 	position: absolute; 
+
+	height: 20px;	
+	width: 20px;
+
 	border-radius: 25px;
 	cursor: pointer; 
 	transition: all .5s ease;
 
-	top: 2px;
-	bottom: 2px;
+	top: 3px;
+	bottom: 3px;
+
+	display: none;
 }
 
-.radio-switch-box #switch-slider-off:checked + div > label {
-	height: 20px;	
-	width: 20px;
-	right: 3px; 
+.radio-switch-box #switch-slider-off:checked + div .radio-button {
+	display: inline-block;
+	/*container width - label width - space*/
+	left: calc(42px - 20px - 3px); 
 
 	background-color: #288575;
 }
 
-.radio-switch-box #switch-slider-on:checked + div > label {
-	height: 20px;	
-	width: 20px;
+.radio-switch-box #switch-slider-on:checked + div .radio-button {
+	display: inline-block;
 	left: 3px;
 
 	background-color: #FFFFFF;
 }
 
-.radio-switch-box span {
+.radio-switch-box .radio-label {
 	position: absolute;
-	/*width + 6px*/ 
+	
 	transform: translate(48px);		
 	font-size: 14px;	
 	line-height: 24px;
+
+	cursor: pointer;
 	white-space: nowrap;
 }
 
-.radio-switch-box #switch-slider-on:checked + div > span {
+.radio-switch-box #switch-slider-off:not(:checked) + div .radio-label,
+.radio-switch-box #switch-slider-on:not(:checked) + div .radio-label {
+	display: none;
+}
+
+.radio-switch-box #switch-slider-on:checked + div .radio-label {
 	color: #288575;
 }
 
@@ -96,7 +102,7 @@
 	float: left;
 }
 
-.radio-check-box label {
+.radio-check-box .label-border label {
 	display: inline-block;
 	height: 100%;	
 	width: 100%;
@@ -112,10 +118,12 @@
 
 	margin: 0 10px 0 5px;
 
+	cursor: pointer;
+
 	clear: left;
 }
 
-.radio-check-box input[type="radio"]:checked + div label {
+.radio-check-box input[type="radio"]:checked + div .label-border label {
 	background-color: #288575;  
 }
 
