@@ -19,7 +19,6 @@
 
 .category-nav {
 	right: 29px;	
-	width: 191px;
 }
 
 .category-nav > span {
@@ -53,7 +52,6 @@
 
 .product-s-container .left .product-img {
 	width: 100%;
-	/*min-width: 380px;*/
 	display: block;
 }
 
@@ -125,7 +123,6 @@
 
 	padding-top: 9px;
 	line-height: 24px;	
-	/*line-height: 32px;*/
 }
 
 .product-s-container .buy label > span:nth-child(1) {
