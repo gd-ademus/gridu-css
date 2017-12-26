@@ -83,7 +83,7 @@
     <div id="addProductModal" class="modal-window modal-product-window">
         <div class="modal-window-header">Thank you!</div>
         <div class="modal-product-simple-text">
-            <span class="line">You successfully purchased <span/>
+            <span class="line">You successfully purchased</span>
             <span class="line">this item.</span>
         </div>
         <div class="modal-add-product-buttons">
@@ -96,8 +96,8 @@
         <div class="modal-window-header">Edit “Active Coat Lorem Ipsum Dolor Sit Amet Consectetur blabla</div>
         <div class="container-modal-product-edit-body modal-product-edit-body">
             <div class="product-edit-name item-edit-name">
-                <label class="product-edit-title">Name:</label>
-                <input type="text" placeholder="Please enter name..."/>
+                <label for="product-edit-name-title-input" class="product-edit-title">Name:</label>
+                <input id="product-edit-name-title-input" type="text" placeholder="Please enter name..."/>
             </div>
             <div class="product-edit-category item-edit-category">
                 <div class="product-edit-title">Category:</div>
@@ -139,15 +139,15 @@
                 <textarea></textarea>
             </div>
             <div class="product-edit-link-image item-edit-link-image">
-                <label class="product-edit-title">Link to image:</label>
-                <input type="text" pattern="http://[A-Za-z_0-9_\.]{3,}" placeholder="Please enter link to img...">
+                <label for="product-edit-link-image-input" class="product-edit-title">Link to image:</label>
+                <input id="product-edit-link-image-input" type="text" pattern="http://[A-Za-z_0-9_\.]{3,}" placeholder="Please enter link to img...">
             </div>
             <div class="product-edit-image item-edit-image">
                 <img src="./components/images/product.jpg" alt="Some img ...">
             </div>
             <div class="product-edit-price item-edit-price">
-                <label class="product-edit-title">Price:</label>
-                <input type="number" step="1" min="1" placeholder="Please enter price...">
+                <label for="product-edit-price-title-input" class="product-edit-title">Price:</label>
+                <input id="product-edit-price-title-input" type="number" step="1" min="1" placeholder="Please enter price...">
             </div>
             <div class="product-edit-rating item-edit-rating">
                 <div class="product-edit-title">Rating:</div>
