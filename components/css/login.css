@@ -42,7 +42,7 @@
 	border-radius: 10px;	
 	background-color: #FFFFFF;
 
-	font-family: "PT Sans";	
+	font-family: "PT Sans", sans-serif;
 	font-size: 24px;	
 	line-height: 32px;
 	
@@ -68,7 +68,7 @@
 	display: inline-block;
 	height: 21px;	
 	color: #000000;	
-	font-family: "PT Sans";	
+	font-family: "PT Sans", sans-serif;
 	font-size: 18px;	
 	line-height: 23px;
 
@@ -114,7 +114,7 @@
 	border-width:inherit;
 	
 	color: #FFFFFF;	
-	font-family: "PT Sans Caption";	
+	font-family: "PT Sans Caption", sans-serif;
 	font-size: 18px;	
 	font-weight: bold;	
 	line-height: 23px;	

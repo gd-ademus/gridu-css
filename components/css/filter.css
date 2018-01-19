@@ -220,7 +220,7 @@
 	
 	text-align: center;
 	color: #000000;	
-	font-family: "PT Sans";	
+	font-family: "PT Sans", sans-serif;
 	font-size: 12px;	
 	line-height: 15px;
 }
