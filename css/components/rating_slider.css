@@ -1,0 +1,52 @@
+.rating-slider {
+    position: relative;
+    width: 100%;
+
+    border: 2px solid #B8B8B8;
+
+    top: 10px;
+    left: 0;
+}
+
+.rating-slider .slider-handle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: -10px;
+
+    background-color: #288575;
+    border-radius: 25px;
+
+    cursor: pointer;
+}
+
+.rating-slider .left-handle {
+    left: 10%;
+}
+
+.rating-slider .right-handle {
+    right: 40%;
+}
+
+.rating-slider .slider-selected {
+    position: absolute;
+    top: -2px;
+    left: 10%;
+    right: 40%;
+
+    height: 2px;
+    border: 2px solid #288575;
+}
+
+.rating-slider .slider-handle > span {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+}

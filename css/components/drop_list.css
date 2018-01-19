@@ -1,0 +1,31 @@
+.drop-list {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    height: 35px;
+    border-radius: 5px;
+
+    border-style: none;
+    outline: none;
+
+    font-size: 14px;
+    line-height: 19px;
+
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+}
+
+.drop-list.green {
+    width: 235px;
+
+    background-color: #288575;
+
+    padding: 9px 42px 9px 17px;
+
+    color: #FFFFFF;
+
+    background-image: url("../../images/down.svg");
+}

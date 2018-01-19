@@ -1,0 +1,49 @@
+@media all and (max-width: 800px) {
+
+    .wrapper-background nav {
+        margin: 15px 20px;
+    }
+
+    .filter-button {
+        left: 0;
+    }
+
+    .filter-balloon {
+        height: 439px;
+        width: 100%;
+
+        bottom: calc(-439px - 12px);
+    }
+
+    .products {
+        grid-template-columns: [line1] minmax(440px, auto) [line2];
+        margin: 20px;
+    }
+
+    .filter-balloon {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .filter-balloon-availability,
+    .filter-balloon-gender,
+    .filter-balloon-category,
+    .filter-balloon-rating,
+    .filter-balloon-price {
+        height: 86px;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .filter-balloon-rating::after,
+    .filter-balloon-availability::after,
+    .filter-balloon-gender::after,
+    .filter-balloon-category::after {
+        position: absolute;
+        content:"";
+        width: 100%;
+        bottom: 0;
+        border: 0.5px solid #288575;
+        box-sizing: border-box;
+    }
+}

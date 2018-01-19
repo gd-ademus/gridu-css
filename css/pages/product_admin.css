@@ -1,0 +1,230 @@
+.product-s-container .right .admin-text {
+    margin-top: 1em;
+}
+
+.product-s-container .right .admin-text > a {
+    color: #398C7E;
+}
+
+.modal-product-window {
+    display: none;
+
+    max-width: 730px;
+    min-width: 480px;
+    width: 100%;
+}
+
+.modal-window-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 70px;
+}
+
+.modal-product-simple-text {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+
+    padding: 120px 60px;
+}
+
+.modal-product-simple-text .line {
+    display: inline-block;
+}
+
+
+.modal-delete-product-buttons,
+.modal-add-product-buttons,
+.modal-edit-product-buttons {
+    display: inline-block;;
+    white-space: nowrap;
+    position: absolute;
+
+    right: 30px;
+    bottom: 30px;
+}
+
+.modal-product-button {
+    height: 50px;
+    border-radius: 5px;
+
+    color: #FFFFFF;
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23px;
+    text-align: center;
+
+    outline: none;
+    border-width: inherit;
+    white-space: nowrap;
+}
+
+#deleteProductModal {
+    max-height: 315px;
+}
+
+#addProductModal {
+    max-height: 285px;
+}
+
+#editProductModal {
+    max-height: 1040px;
+}
+
+.modal-product-cancel,
+.modal-product-submit {
+    width: 170px;
+}
+
+.modal-product-cancel {
+    background: linear-gradient(180deg, #B1B1B1 0%, #777777 100%);
+}
+
+.modal-product-submit {
+    margin-left: 20px;
+    background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+}
+
+.modal-product-cancel:active {
+    background: linear-gradient(0deg, #B1B1B1 0%, #777777 100%);
+    box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.modal-product-submit:active {
+    background: linear-gradient(0deg, #2BBCC2 0%, #1B745F 100%);
+    box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.modal-product-continue {
+    width: 220px;
+    background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+}
+
+.modal-product-continue:active {
+    background: linear-gradient(0deg, #2BBCC2 0%, #1B745F 100%);
+    box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
+}
+
+.modal-product-edit-body {
+    height: 480px;
+    margin: 90px 40px 125px 40px;
+}
+
+.container-modal-product-edit-body {
+    display: grid;
+
+    grid-template-columns: [line1] 300px [line2] 300px [line3];
+    grid-template-rows: [row1] 75px [row2] 7px [row3] 75px [row4] 75px [row5] auto [row6] 75px [row7] 75px [row8] 30px [row9];
+
+    grid-gap: 0 49px;
+    align-items: stretch;
+}
+
+.item-edit-name {
+    grid-column: line1 / line2;
+    grid-row: row1 / row2;
+}
+
+.item-edit-category {
+    grid-column: line1 / line2;
+    grid-row: row3 / row4;
+}
+
+.item-edit-gender {
+    grid-column: line1 / line2;
+    grid-row: row4 / row5;
+}
+
+.item-edit-description {
+    grid-column: line1 / line2;
+    grid-row: row5 / row9;
+}
+
+.item-edit-link-image {
+    grid-column: line2 / line3;
+    grid-row: row1 / row2;
+}
+
+.item-edit-image {
+    grid-column: line2 / line3;
+    grid-row: row2 / row6;
+}
+
+.item-edit-price {
+    grid-column: line2 / line3;
+    grid-row: row6 / row7;
+}
+
+.item-edit-rating {
+    grid-column: line2 / line3;
+    grid-row: row7 / row8;
+}
+
+.container-modal-product-edit-body > * {
+    margin-bottom: 20px;
+}
+
+.container-modal-product-edit-body .product-edit-title {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 4px;
+}
+
+.modal-product-edit-body input[type="text"],
+.modal-product-edit-body input[type="number"] {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+
+    outline:none;
+    border-width:inherit;
+
+    padding: 0 1em;
+}
+
+.drop-list.white {
+    width: 100%;
+    padding: 0 1em;
+    background-image: url("../../images/down2.svg");
+}
+
+.product-edit-description textarea {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+
+    outline: none;
+    border-width: inherit;
+    resize: none;
+
+    padding: 1em;
+}
+
+.product-edit-link-image input[type="text"]:invalid {
+    border: 3px solid #FF0000;
+}
+
+.product-edit-image {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #D8D8D8;
+}
+
+.product-edit-image > img {
+    height: 100%;
+    width: 100%;
+}

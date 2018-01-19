@@ -1,0 +1,75 @@
+.product-s-container > .right {
+    display: flex;
+    flex-direction: column;
+    flex: 1 102%;
+
+    margin: 20px 20px 0 0;
+}
+
+.product-s-container .right .header {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.product-s-container .right .text {
+    font-size: 16px;
+    line-height: 20px;
+
+    flex:1 auto;
+}
+
+.product-s-container .right .text::before {
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+
+    border: 1px solid #3FC5CB;
+    margin: 6px 0;
+}
+
+.product-s-container .buy {
+    margin-top: 20px;
+}
+
+.product-s-container .buy label {
+    float: left;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    padding-top: 9px;
+    line-height: 24px;
+}
+
+.product-s-container .buy label > span:nth-child(1) {
+    color: #288575;
+}
+
+.product-s-container .buy label > span:nth-child(2) {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.product-s-container .buy input {
+    float: right;
+
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #2BBCC2 0%, #1B745F 100%);
+
+    outline: none;
+    border-width: inherit;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.product-s-container .buy input:active {
+    background: linear-gradient(0deg, #2BBCC2 0%, #1B745F 100%);
+    box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
+}

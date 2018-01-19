@@ -1,5 +1,4 @@
 .modal-background {
-	/*opacity: 0.5;*/
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
@@ -24,18 +23,12 @@
 .modal-window {
 	position: absolute;
 
-	/*top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;*/
-
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
 	border-radius: 15px;
-	background: url("../images/modal-bg.png"), rgba(0,0,0,0.2);	
+	background: url("../../images/modal-bg.png"), rgba(0,0,0,0.2);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
 
 	-moz-transition: all .1s linear;

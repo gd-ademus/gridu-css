@@ -1,0 +1,24 @@
+.back-link, .category-nav {
+    position: absolute;
+    top: 65px;
+    height: 18px;
+
+    color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.back-link {
+    left: 31px;
+    width: 33px;
+}
+
+.category-nav {
+    right: 29px;
+}
+
+.category-nav > span {
+    font-weight: lighter;
+}

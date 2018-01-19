@@ -1,0 +1,50 @@
+.radio-check-box {
+    white-space: nowrap;
+}
+
+.radio-check-box input[type="radio"] {
+    display: none;
+}
+
+.radio-check-box .radio {
+    display: inline-block;
+}
+
+.radio-check-box input[type="radio"] + div .label-border {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #288575;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+
+    float: left;
+}
+
+.radio-check-box .label-border label {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #FFFFFF;
+
+    cursor: pointer;
+}
+
+.radio-check-box .text {
+    font-size: 14px;
+    line-height: 24px;
+
+    margin: 0 10px 0 5px;
+
+    cursor: pointer;
+
+    clear: left;
+}
+
+.radio-check-box input[type="radio"]:checked + div .label-border label {
+    background-color: #288575;
+}
+
+.radio-check-box input[type="radio"]:checked + div .text {
+    color: #288575;
+}

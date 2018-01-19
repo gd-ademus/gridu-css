@@ -1,0 +1,35 @@
+.product-s-container > .left {
+    flex: 1 98%;
+    margin: 20px 20px 0 0;
+}
+
+.product-s-container > .left > div {
+    position: relative;
+}
+
+.product-s-container .left .product-img {
+    width: 100%;
+    display: block;
+}
+
+.product-s-container .left .star-box {
+    position: absolute;
+
+    font-size: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0,0.75);
+}
+
+.product-s-container .left .star-box div {
+    height: 35px;
+    padding: 7px 17px 7px 17px;
+}
+
+.product-s-container .left .star-box img {
+    height: 16.46px;
+    width: 17.31px;
+    margin-right: 3.69px;
+}

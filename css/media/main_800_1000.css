@@ -1,0 +1,11 @@
+@media all and (max-width: 1000px) and (min-width: 800px) {
+
+	.wrapper-background nav {
+		margin: 15px 25px;
+	}
+
+	.products {
+		grid-template-columns: [line1] 1fr [line2] 1fr [line3];
+		margin: 25px;
+	}
+}

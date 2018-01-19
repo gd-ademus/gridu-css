@@ -14,7 +14,7 @@
 	width: 100%;
 	height: 100%;
 
-	background: #FFFFFF url("../images/sale.jpg");
+	background: #FFFFFF url("../../images/sale.jpg");
 }
 
 .modal-login {
@@ -55,12 +55,12 @@
 
 .login-input {
 	text-overflow: ellipsis;
-	background-image: url("../images/login-inactive.svg");
+	background-image: url("../../images/login-inactive.svg");
 	background-size: 30px 30px;
 }
 
 .password-input {
-	background-image: url("../images/password-inactive.svg");
+	background-image: url("../../images/password-inactive.svg");
 	background-size: 30px 36px;
 }
 
@@ -81,11 +81,11 @@
 }
 
 .login-input:focus {
-	background-image: url("../images/login-active.svg");
+	background-image: url("../../images/login-active.svg");
 }
 
 .password-input:focus {
-	background-image: url("../images/password-active.svg");	
+	background-image: url("../../images/password-active.svg");
 }
 
 .login-input:invalid, .password-input:invalid {
@@ -93,11 +93,11 @@
 }
 
 .login-input:invalid {
-	background-image: url("../images/login-invalid.svg");
+	background-image: url("../../images/login-invalid.svg");
 }
 
 .password-input:invalid {
-	background-image: url("../images/password-invalid.svg");	
+	background-image: url("../../images/password-invalid.svg");
 }
 
 .login-submit {
@@ -124,12 +124,5 @@
 .login-submit:active {
 	background: linear-gradient(0deg, #2BBCC2 0%, #1B745F 100%);	
 	box-shadow: inset 2px 2px 4px 0 rgba(0,0,0,0.5);
-}
-
-/*It should be 480px but in such way it is more pretty*/
-@media all and (max-width: 580px) {
-	.modal-login {
-		width: 95vw;
-	}
 }
 
