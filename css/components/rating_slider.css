@@ -38,7 +38,7 @@
     border: 2px solid #288575;
 }
 
-.rating-slider .slider-handle > span {
+.rating-slider .filter-balloon-rating-value {
     position: absolute;
     top: 22px;
     left: 0;

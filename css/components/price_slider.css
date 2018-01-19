@@ -44,10 +44,10 @@
     width: 20px;
 }
 
-.price-slider .slider-handle span {
-    position: absolute;
-    left: 0;
-    right: 0;
+.price-slider .slider-handle .price-slider-value {
+    position: relative;
+    display: table;
+    width: 20px;
     top: 22px;
     text-align: center;
     color: #000000;

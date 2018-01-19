@@ -19,6 +19,6 @@
     right: 29px;
 }
 
-.category-nav > span {
+.category-nav > .category-key {
     font-weight: lighter;
 }
